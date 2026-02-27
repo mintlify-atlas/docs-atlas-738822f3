@@ -1,0 +1,78 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "Splat",
+  "projectDescription": "AI-powered debugging tool that analyzes errors and provides contextual fixes using fast inference",
+  "theme": "aspen",
+  "primaryColor": "#9333EA",
+  "lightColor": "#C084FC",
+  "darkColor": "#6B21A8",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "introduction",
+          "installation",
+          "quickstart"
+        ]
+      },
+      {
+        "group": "Core Concepts",
+        "pages": [
+          "concepts/how-it-works",
+          "concepts/relational-parsing",
+          "concepts/ai-integration"
+        ]
+      },
+      {
+        "group": "Commands",
+        "pages": [
+          "commands/squash",
+          "commands/flags",
+          "commands/examples"
+        ]
+      },
+      {
+        "group": "Configuration",
+        "pages": [
+          "configuration/setup",
+          "configuration/environment-variables",
+          "configuration/groq-api"
+        ]
+      },
+      {
+        "group": "Advanced",
+        "pages": [
+          "advanced/relational-mode",
+          "advanced/file-writer-agent",
+          "advanced/custom-integrations"
+        ]
+      },
+      {
+        "group": "Reference",
+        "pages": [
+          "reference/architecture",
+          "reference/troubleshooting",
+          "reference/known-bugs"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "AI-optimized debugging with Groq fast inference",
+    "Simple out-of-the-box usage without configuration",
+    "Git-aware context gathering respects .gitignore",
+    "Relational parsing for Nth-degree context analysis",
+    "Automatic code fix suggestions",
+    "FastAPI and terminal session support"
+  ],
+  "publicApiSurface": [
+    "splat squash <entrypoint>",
+    "splat squash -r <entrypoint>",
+    "relational_error_parsing_function(entrypoint, flag)",
+    "process(traceback, error_info, repopack)",
+    "build_adjacency_list(files, project_root)",
+    "parse_error_stack(error_info)",
+    "get_nth_related_files(start_files, graph)"
+  ]
+}
