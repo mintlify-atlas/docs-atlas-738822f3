@@ -1,6 +1,6 @@
 {
-  "projectType": "cli_tool",
-  "productType": "cli_tool",
+  "projectType": "cli-tool",
+  "productType": "cli-tool",
   "projectName": "Splat",
   "projectDescription": "AI-powered debugging tool that analyzes errors and provides contextual fixes using fast inference",
   "theme": "aspen",
